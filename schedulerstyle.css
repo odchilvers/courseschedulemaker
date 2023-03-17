@@ -73,16 +73,19 @@ body {
 }
 
 .button:hover {
+    /* get started button hover effect to change colors */
     background-color: #badfe6;
     transition: 0.7s;
 }
 
-.container {
+.getStartedButtonContainer {
+    /* get started button */
     height: 200px;
     position: relative;
 }
 
 .center {
+    /* centers the get started button */
     margin: 0;
     position: absolute;
     top: 15%;
@@ -122,6 +125,7 @@ body {
     position: absolute;
     top: 200px;
     left: 50px;
+    right: 200px;
     font-size: 22px;
     font-family: Arial;
 }
@@ -129,7 +133,7 @@ body {
 #classInfoForms {
     /* details of the classInfoForms */
     height: 100px;
-    width: 200%; /* !!!!!!!!!! see how to change this with the screen size !!!!! */
+    width: auto;
     background-color: #f0f0f0;
     margin: 5px;
     border-radius: 25px;
@@ -141,8 +145,31 @@ form {
 }
 
 #classInfo {
+    /* information text within the class info boxes */
     font-family: Arial;
     font-size: 20px;
     margin: 20px;
     padding: 15px 5px;
+}
+
+#classWrapper {
+    /* changes the class info box to adjust to screen */
+    width: 100%;
+}
+
+.footer { /* footer attributes */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #badfe6;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+.footerContent {
+    /* padding the footer adds 40 to footer height */
+    padding-bottom: 100px;
 }

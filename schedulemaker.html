@@ -11,14 +11,11 @@
 
 <body>
     <div class="navbar">
-        <!-- <div id="ScheduleMaker">
-            <h1> Schedule Maker </h1>
-        </div> -->
         <a href="./coursescheduler.html">ScheduleMaker</a>
-        <a href="https://github.com/odchilvers/courseschedulemaker">Github</a>
+        <a href="https://github.com/odchilvers/courseschedulemaker" target="_blank">Github</a>
     </div>
 
-    <div id="ScheduleIcon">
+    <div id="ScheduleIcon"> <!-- logo for the top left of the page -->
         <h1>
             <img class="resizeLogo"
                 src="https://cdn.discordapp.com/attachments/1027280420804505732/1086306849013371052/schedulemakerlogoSMALL.png" />
@@ -30,9 +27,9 @@
     </div>
 
     <form id="askNumClasses">
-        <label for="numberOfClasses">Select how many classes:</label>
+        <label for="numberOfClasses">How many classes are you taking? </label> <!-- label for the text to ask number of classes -->
         <select name="numberOfClasses" id="numClasses">
-            <!--Call run() function to have script get input data -->
+            <!-- options for the possible number of classes -->
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -48,7 +45,15 @@
 
         <div id="classWrapper"> <!-- displays the class info forms -->
             <div id="classInfoForms">
-                <p id="classInfo"> Class Name </p>
+                <p id="classInfo"> Class Name </p> <!-- information for inside of the class info boxes -->
+            </div>
+        </div>
+
+
+        <br><br><br>
+        <div class="footerContainer"> <!-- footer for the bottom of the page -->
+            <div class="footer">
+                <p>Check out the github for this project!</p>
             </div>
         </div>
 
