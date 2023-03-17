@@ -1,0 +1,55 @@
+body{
+    background: white; 
+}
+
+#ScheduleMaker{ /* Center Main Title */
+    text-align: center;
+}
+
+.navbar{ /* top navigation bar */
+    overflow: hidden;
+    background-color: #106878;
+    position: absolute; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #badfe6;
+    color: #032e36;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+.slogan{
+    font-family: Arial;
+    position: absolute;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #106878;
+    font-size: 35px;
+}
+
+/* Resizes the title image */
+.resize {
+    width: 300px;
+    height: auto;
+}
+
