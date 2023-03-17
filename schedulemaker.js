@@ -15,7 +15,7 @@ window.onload = function () { // makes sure to run when the window has loaded
         elementCount = e.target.value;
         container.innerHTML = '';
         for (var i = 0; i < elementCount; i++) {
-            container.appendChild(myDiv.cloneNode(true)); // clones the forms to display
+            container.appendChild(createCourseDiv()); // clones the forms to display
         }
     });
     sectionSelect.addEventListener("change", s => {
@@ -26,6 +26,25 @@ window.onload = function () { // makes sure to run when the window has loaded
         }
     });
 }
+
+function createCourseDiv() {
+    const template = myDiv.cloneNode(true);
+
+    const localSectionDiv = template.getElementsByClassName("sectionInfoForms")[0];
+    const localSectionContainer = template.getElementsByClassName("sectionWrapper")[0];
+    const localSectionSelect = template.getElementsByClassName("numSections")[0];
+
+    localSectionSelect.addEventListener("change", s => {
+        localSectionContainer.innerHTML = '';
+        for (let i = 0; i < s.target.value; i++) {
+            localSectionContainer.appendChild(localSectionDiv.cloneNode(true));
+        }
+    });
+
+    return template;
+}
+
+
 
 function courseNameType() {
     var courseNameType = document.getElementByClassName("courseType").value;

@@ -132,7 +132,7 @@ body {
 
 .classInfoForms {
     /* details of the classInfoForms */
-    height: 90px;
+    height: auto;
     width: auto;
     background-color: #fcfcfc;
     margin: 5px;
