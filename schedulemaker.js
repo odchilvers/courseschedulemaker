@@ -5,36 +5,24 @@ const container = document.getElementsByClassName("classWrapper")[0];
 const select = document.getElementsByClassName("numClasses")[0]; // gets number of classes input
 let elementCount = 0;
 
-const sectionDiv = myDiv.getElementsByClassName("sectionInfoForms")[0]; // gets the sectionInfoForms data
-const sectionContainer = myDiv.getElementsByClassName("sectionWrapper")[0];
-const sectionSelect = myDiv.getElementsByClassName("numSections")[0]; // gets number of sections input
-let sectionElementCount = 0;
-
 window.onload = function () { // makes sure to run when the window has loaded
-    select.addEventListener("change", e => {
+    select.addEventListener("change", e => { // makes event listener for each course
         elementCount = e.target.value;
         container.innerHTML = '';
         for (var i = 0; i < elementCount; i++) {
             container.appendChild(createCourseDiv()); // clones the forms to display
         }
     });
-    sectionSelect.addEventListener("change", s => {
-        sectionElementCount = s.target.value;
-        sectionContainer.innerHTML = '';
-        for (var i = 0; i < sectionElementCount; i++) {
-            sectionContainer.appendChild(sectionDiv.cloneNode(true)); // clones the forms to display
-        }
-    });
 }
 
-function createCourseDiv() {
-    const template = myDiv.cloneNode(true);
+function createCourseDiv() { // creates a course div for each course
+    const template = myDiv.cloneNode(true); // made as a template for each copy node
 
     const localSectionDiv = template.getElementsByClassName("sectionInfoForms")[0];
     const localSectionContainer = template.getElementsByClassName("sectionWrapper")[0];
     const localSectionSelect = template.getElementsByClassName("numSections")[0];
 
-    localSectionSelect.addEventListener("change", s => {
+    localSectionSelect.addEventListener("change", s => { // adds event listeners for the sections
         localSectionContainer.innerHTML = '';
         for (let i = 0; i < s.target.value; i++) {
             localSectionContainer.appendChild(localSectionDiv.cloneNode(true));
@@ -43,8 +31,6 @@ function createCourseDiv() {
 
     return template;
 }
-
-
 
 function courseNameType() {
     var courseNameType = document.getElementByClassName("courseType").value;
