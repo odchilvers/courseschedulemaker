@@ -132,7 +132,7 @@ body {
 
 #classInfoForms {
     /* details of the classInfoForms */
-    height: 190px;
+    height: 90px;
     width: auto;
     background-color: #fcfcfc;
     margin: 5px;
@@ -145,7 +145,7 @@ form {
     display: inline-block;
 }
 
-#classInfo {
+.classInfo {
     /* information text within the class info boxes */
     font-family: Arial;
     font-size: 18px;
@@ -173,4 +173,20 @@ form {
 .footerContent {
     /* padding the footer adds 40 to footer height */
     padding-bottom: 100px;
+}
+
+/* style guide for the sections information parts */
+#sectionWrapper {
+    /* changes the section info box to adjust to screen */
+    width: 100%;
+}
+
+#sectionInfoForms {
+    /* details of the classInfoForms */
+    height: 50px;
+    width: auto;
+    background-color: #fcfcfc;
+    margin: 5px;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
