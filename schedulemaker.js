@@ -6,13 +6,16 @@ const select = document.getElementsByClassName("numClasses")[0]; // gets number 
 let elementCount = 0;
 
 window.onload = function () { // makes sure to run when the window has loaded
-    select.addEventListener("change", e => { // makes event listener for each course
-        elementCount = e.target.value;
+    select.addEventListener("change", refreshCourses);
+
+    function refreshCourses() { // makes event listener for each course
         container.innerHTML = '';
-        for (var i = 0; i < elementCount; i++) {
+        for (var i = 0; i < select.value; i++) {
             container.appendChild(createCourseDiv()); // clones the forms to display
         }
-    });
+    }
+
+    refreshCourses();
 }
 
 function createCourseDiv() { // creates a course div for each course
