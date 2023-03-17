@@ -120,7 +120,7 @@ body {
     font-size: 50px;
 }
 
-#askNumClasses {
+.askNumClasses {
     /* text displays to ask number of classes */
     position: absolute;
     top: 200px;
@@ -130,7 +130,7 @@ body {
     font-family: Arial;
 }
 
-#classInfoForms {
+.classInfoForms {
     /* details of the classInfoForms */
     height: 90px;
     width: auto;
@@ -153,7 +153,7 @@ form {
     padding: 5px;
 }
 
-#classWrapper {
+.classWrapper {
     /* changes the class info box to adjust to screen */
     width: 100%;
 }
@@ -176,12 +176,12 @@ form {
 }
 
 /* style guide for the sections information parts */
-#sectionWrapper {
+.sectionWrapper {
     /* changes the section info box to adjust to screen */
     width: 100%;
 }
 
-#sectionInfoForms {
+.sectionInfoForms {
     /* details of the classInfoForms */
     height: 50px;
     width: auto;

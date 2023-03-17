@@ -26,10 +26,10 @@
         <h2 class="sloganStart"> Let's start! </h2>
     </div>
 
-    <form id="askNumClasses">
+    <form class="askNumClasses">
         <label for="numberOfClasses">How many classes are you taking? </label>
         <!-- label for the text to ask number of classes -->
-        <select name="numberOfClasses" id="numClasses">
+        <select name="numberOfClasses" class="numClasses">
             <!-- options for the possible number of classes -->
             <option value="1">1</option>
             <option value="2">2</option>
@@ -44,16 +44,16 @@
         </select>
         <br>
 
-        <div id="classWrapper"> <!-- displays the class info forms -->
-            <div id="classInfoForms">
+        <div class="classWrapper"> <!-- displays the class info forms -->
+            <div class="classInfoForms">
                 <p class="classInfo"> <!-- gets the name of the class -->
-                    Course Type: <input type="text" id="courseType" onChange="courseNameType();">
-                <p id="courseName"></p>
+                    Course Type: <input type="text" class="courseType" onChange="courseNameType();">
+                <p class="courseName"></p>
                 </p>
-                <form id="askNumSections"> <!-- gets the number of sections -->
+                <form class="askNumSections"> <!-- gets the number of sections -->
                     <label class="classInfo" for="numberOfClasses">Number of sections</label>
                     <!-- label for the text to ask number of classes -->
-                    <select name="numberOfCSections" id="numSections">
+                    <select name="numberOfCSections" class="numSections">
                         <!-- options for the possible number of classes -->
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -87,8 +87,8 @@
                         <option value="30">30</option>
                     </select>
                     <br><br>
-                    <div id="sectionWrapper">
-                        <div id="sectionInfoForms">
+                    <div class="sectionWrapper">
+                        <div class="sectionInfoForms">
 
                         </div>
                     </div>
