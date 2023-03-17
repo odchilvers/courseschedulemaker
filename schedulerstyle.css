@@ -1,17 +1,22 @@
-body{
-    background: white; 
+body {
+    background: white;
 }
 
-#ScheduleMaker{ /* Center Main Title */
+#ScheduleMaker {
+    /* Center Main Title */
     text-align: center;
 }
 
-.navbar{ /* top navigation bar */
+.navbar {
+    /* top navigation bar */
     overflow: hidden;
     background-color: #106878;
-    position: absolute; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: absolute;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
 }
 
 /* Links inside the navbar */
@@ -33,13 +38,14 @@ body{
 
 /* Main content */
 .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    margin-top: 30px;
+    /* Add a top margin to avoid content overlay */
 }
 
-.slogan{
+.slogan {
     font-family: Arial;
     position: absolute;
-    top: 165px;
+    top: 180px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -53,3 +59,40 @@ body{
     height: auto;
 }
 
+/* Get Started Button */
+.button {
+    background-color: #032e36;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+    background-color: #badfe6;
+    transition: 0.7s;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input[type=text] {
+    background-color: white;
+    color: white;
+}
