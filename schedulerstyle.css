@@ -132,11 +132,12 @@ body {
 
 #classInfoForms {
     /* details of the classInfoForms */
-    height: 100px;
+    height: 190px;
     width: auto;
-    background-color: #f0f0f0;
+    background-color: #fcfcfc;
     margin: 5px;
     border-radius: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -147,9 +148,9 @@ form {
 #classInfo {
     /* information text within the class info boxes */
     font-family: Arial;
-    font-size: 20px;
+    font-size: 18px;
     margin: 20px;
-    padding: 15px 5px;
+    padding: 5px;
 }
 
 #classWrapper {
