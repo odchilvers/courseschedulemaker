@@ -1,1 +1,1 @@
-# courseschedulemaker
+# ScheduleMaker
