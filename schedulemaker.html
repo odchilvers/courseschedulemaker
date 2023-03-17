@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>ScheduleMaker</title>
     <link rel="stylesheet" href="./schedulerstyle.css"> <!-- reference to the css stylesheet -->
 </head>
+
 <body>
     <div class="navbar">
         <!-- <div id="ScheduleMaker">
@@ -16,16 +18,41 @@
         <a href="https://github.com/odchilvers/courseschedulemaker">Github</a>
     </div>
 
-    <div id = "ScheduleMaker">
-        <!-- <h1>ScheduleMaker</h1> -->
+    <div id="ScheduleIcon">
         <h1>
-            <img class="resize" src="https://cdn.discordapp.com/attachments/1027280420804505732/1086150309069463612/IMG_2606.png"... />
+            <img class="resizeLogo"
+                src="https://cdn.discordapp.com/attachments/1027280420804505732/1086306849013371052/schedulemakerlogoSMALL.png" />
         </h1>
     </div>
 
     <div class="main">
-        <h2 class="slogan"> Let's start! </h2>
+        <h2 class="sloganStart"> Let's start! </h2>
     </div>
 
+    <form id="askNumClasses">
+        <label for="numberOfClasses">Select how many classes:</label>
+        <select name="numberOfClasses" id="numClasses">
+            <!--Call run() function to have script get input data -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+
+        <div id="classWrapper"> <!-- displays the class info forms -->
+            <div id="classInfoForms">
+                <p id="classInfo"> Class Name </p>
+            </div>
+        </div>
+
+        <script src="./schedulemaker.js"></script> <!-- runs the script -->
 </body>
+
 </html>

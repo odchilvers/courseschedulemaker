@@ -62,15 +62,14 @@ body {
 /* Get Started Button */
 .button {
     background-color: #032e36;
-    /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 25px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button:hover {
@@ -92,7 +91,58 @@ body {
     transform: translate(-50%, -50%);
 }
 
-input[type=text] {
-    background-color: white;
-    color: white;
+/* Resizes the small icon */
+.resizeLogo {
+    width: 100px;
+    height: auto;
+}
+
+#ScheduleIcon {
+    /* Align small icon in left hand corner */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+}
+
+.sloganStart {
+    /* the top slogan "Let's Start!" */
+    font-family: Arial;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #106878;
+    font-size: 50px;
+}
+
+#askNumClasses {
+    /* text displays to ask number of classes */
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-size: 22px;
+    font-family: Arial;
+}
+
+#classInfoForms {
+    /* details of the classInfoForms */
+    height: 100px;
+    width: 200%; /* !!!!!!!!!! see how to change this with the screen size !!!!! */
+    background-color: #f0f0f0;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+form {
+    /* displays where the classInfoForms will be */
+    display: inline-block;
+}
+
+#classInfo {
+    font-family: Arial;
+    font-size: 20px;
+    margin: 20px;
+    padding: 15px 5px;
 }
