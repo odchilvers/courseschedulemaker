@@ -126,7 +126,7 @@ body {
     top: 200px;
     left: 50px;
     right: 200px;
-    font-size: 22px;
+    font-size: 24px;
     font-family: Arial;
 }
 
@@ -134,7 +134,7 @@ body {
     /* details of the classInfoForms */
     height: auto;
     width: auto;
-    background-color: #fcfcfc;
+    background-color: #d8edf1;
     margin: 5px;
     border-radius: 25px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -166,7 +166,7 @@ form {
     height: 50px;
     width: 100%;
     background-color: #badfe6;
-    color: white;
+    color: #106878;
     text-align: center;
     font-family: Arial;
 }
@@ -190,8 +190,9 @@ form {
     width: auto;
     background-color: #fcfcfc;
     margin: 5px;
+    margin-top: 15px;
     margin-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }

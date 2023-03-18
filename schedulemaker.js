@@ -34,8 +34,9 @@ function createCourseDiv() { // creates a course div for each course
     return template;
 }
 
-function courseNameType() { // stores class course names into an array
+function courseNameType(className, element = document) { // stores class course names into an array
     const courseNames = [];
+    const sectionNumbers = [];
     for (let element of document.getElementsByClassName("courseType")) {
         courseNames.push(element.value);
     }
@@ -44,4 +45,23 @@ function courseNameType() { // stores class course names into an array
 
 }
 
-// figure out how to make a class object that takes in name, number of sections (sections to be object that takes in days to meet and times)
+// function sectionNumberInput() { // stores class course names into an array
+//     const sectionNumbers = [];
+//     for (let element of document.getElementsByClassName("sectionNumber")) {
+//         sectionNumbers.push(element.value);
+//     }
+//     console.log(sectionNumbers); // array of class course names
+//     return sectionNumbers;
+// }
+
+class ScheduleClass{
+    constructor(name, sectionNumbers = [], days = [], startTime, endTime){
+        this.name = name;
+        this.sectionNumbers = sectionNumbers;
+        this.days = days;
+        this.startTime = startTime;
+        this.endTime = endTime;
+    }
+}
+
+// let class1 = new ScheduleClass();
