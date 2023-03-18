@@ -156,13 +156,14 @@ form {
 .classWrapper {
     /* changes the class info box to adjust to screen */
     width: 100%;
+    margin-bottom: 55px;
 }
 
 .footer { /* footer attributes */
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 70px;
+    height: 50px;
     width: 100%;
     background-color: #badfe6;
     color: white;
@@ -187,6 +188,6 @@ form {
     width: auto;
     background-color: #fcfcfc;
     margin: 5px;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }

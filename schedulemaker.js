@@ -14,7 +14,6 @@ window.onload = function () { // makes sure to run when the window has loaded
             container.appendChild(createCourseDiv()); // clones the forms to display
         }
     }
-
     refreshCourses();
 }
 
@@ -35,9 +34,14 @@ function createCourseDiv() { // creates a course div for each course
     return template;
 }
 
-function courseNameType() {
-    var courseNameType = document.getElementByClassName("courseType").value;
-    alert(courseNameType); // !!!!!!!!!! take out but is working!!!! 
+function courseNameType() { // stores class course names into an array
+    const courseNames = [];
+    for (let element of document.getElementsByClassName("courseType")) {
+        courseNames.push(element.value);
+    }
+    console.log(courseNames); // array of class course names
+    return courseNames;
+
 }
 
 // figure out how to make a class object that takes in name, number of sections (sections to be object that takes in days to meet and times)

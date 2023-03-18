@@ -46,14 +46,15 @@
 
         <div class="classWrapper"> <!-- displays the class info forms -->
             <div class="classInfoForms">
-                <p class="classInfo"> <!-- gets the name of the class -->
-                    Course Type: <input type="text" class="courseType" onChange="courseNameType();">
-                <p class="courseName"></p>
-                </p>
+                <form">
+                    <p class="classInfo"> <!-- gets the name of the class -->
+                        Course Type: <input type="text" class="courseType" onchange="courseNameType()">
+                    </p>
+                </form>
                 <form class="askNumSections"> <!-- gets the number of sections -->
-                    <label class="classInfo" for="numberOfClasses">Number of sections</label>
+                    <label class="classInfo" for="numberOfClasses">Number of sections:</label>
                     <!-- label for the text to ask number of classes -->
-                    <select name="numberOfCSections" class="numSections">
+                    <select name="numberOfSections" class="numSections">
                         <!-- options for the possible number of classes -->
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -95,7 +96,7 @@
             </div>
         </div>
 
-        <br><br><br>
+        <br><br>
         <div class="footerContainer"> <!-- footer for the bottom of the page -->
             <div class="footer">
                 <p>Check out the github for this project!</p>
