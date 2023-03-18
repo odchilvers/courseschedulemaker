@@ -180,14 +180,26 @@ form {
 .sectionWrapper {
     /* changes the section info box to adjust to screen */
     width: 100%;
+    margin-top: 10px;
 }
 
 .sectionInfoForms {
     /* details of the classInfoForms */
-    height: 50px;
+    float: left;
+    height: auto;
     width: auto;
     background-color: #fcfcfc;
     margin: 5px;
+    margin-left: 40px;
+    margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sectionInfo {
+    /* information text within the class info boxes */
+    font-family: Arial;
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
 }
