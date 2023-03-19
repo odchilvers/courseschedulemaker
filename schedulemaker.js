@@ -68,3 +68,14 @@ function getValuesOf(className, element = document) { // stores class course nam
     console.log(JSON.stringify(values)); // array of class course names
     return values;
 }
+
+
+const submitButton = document.getElementById("submitButton");
+submitButton.addEventListener("click", submitForm);
+
+function submitForm() {
+    const htmlElement = document.querySelector(".classInfoForms");
+    const schedule = ScheduleClass.from(htmlElement);
+    console.log(schedule);
+    // do something with the schedule object
+}

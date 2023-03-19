@@ -156,7 +156,7 @@ form {
 .classWrapper {
     /* changes the class info box to adjust to screen */
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 120px;
 }
 
 .footer { /* footer attributes */
@@ -204,3 +204,78 @@ form {
     margin: 5px;
     padding: 5px;
 }
+
+/* create schedule button */
+.button-19 {
+  appearance: button;
+  background-color: #106878;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+  position: fixed;
+  bottom: 40px;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #106878;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+input[type="time"] {
+    border: 1px solid #ccc;
+    color: #888;
+    margin: 0.5em;
+    vertical-align: middle;
+    outline: 0;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    width: calc(100% - 3em - 2px);
+    font-family: sans-serif;
+  }
