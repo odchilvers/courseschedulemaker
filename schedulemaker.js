@@ -81,7 +81,7 @@ function getDaysOf() { // stores class course names into an array
     return days;
 }
 
-const submitButton = document.getElementsByClassName("button-19")[0];
+const submitButton = document.getElementsByClassName("button-19")[0]; // gets info from the page to store into scheduleclass
 submitButton.addEventListener("click", submitForm);
 
 function submitForm() {
@@ -89,4 +89,13 @@ function submitForm() {
     const schedule = ScheduleClass.from(htmlElement);
     console.log(schedule);
     // do something with the schedule object
+}
+
+function scrollDown() { // scroll to middle of page where the how to guide is
+    const middle = Math.floor(document.body.scrollHeight / 2 - window.innerHeight / 2);
+    window.scroll({
+        top: middle,
+        left: 0,
+        behavior: 'smooth'
+      });
 }
