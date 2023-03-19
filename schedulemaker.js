@@ -42,7 +42,6 @@ class ScheduleClass {
 
 }
 
-
 function createCourseDiv() { // creates a course div for each course
     const template = myDiv.cloneNode(true); // made as a template for each copy node
 
@@ -70,7 +69,7 @@ function getValuesOf(className, element = document) { // stores class course nam
 }
 
 
-const submitButton = document.getElementById("submitButton");
+const submitButton = document.getElementsByClassName("button-19")[0];
 submitButton.addEventListener("click", submitForm);
 
 function submitForm() {
