@@ -34,7 +34,7 @@ class ScheduleClass {
     static from(HTMLelement) {
         const name = getValuesOf("courseType", HTMLelement)[0];
         const sections = getValuesOf("sectionNumber", HTMLelement);
-        const days = ["monday", "wednesday"]; // TODO
+        const days = getDaysOf();
         const start = getValuesOf("startTime", HTMLelement)[0];
         const end = getValuesOf("endTime", HTMLelement)[0];
         return new ScheduleClass(name, sections, days, start, end);
@@ -68,6 +68,18 @@ function getValuesOf(className, element = document) { // stores class course nam
     return values;
 }
 
+function getDaysOf() { // stores class course names into an array
+    const days = []; // create an empty array to hold the checked days
+    const checkboxes = document.querySelectorAll('.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday');
+
+    checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+            days.push(checkbox.className); // add the class name of the checked checkbox (i.e., the day of the week) to the array
+        }
+    });
+    console.log(days);
+    return days;
+}
 
 const submitButton = document.getElementsByClassName("button-19")[0];
 submitButton.addEventListener("click", submitForm);
