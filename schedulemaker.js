@@ -99,3 +99,11 @@ function scrollDown() { // scroll to middle of page where the how to guide is
         behavior: 'smooth'
       });
 }
+
+function scrollUp() { // scroll to middle of page where the how to guide is
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
